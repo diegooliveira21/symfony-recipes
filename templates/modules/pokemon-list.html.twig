@@ -1,0 +1,11 @@
+{# templates/article/recent_list.html.twig #}
+<h1>Here we go again!</h1>
+{% dump pokemonList %}
+{{dump(pokemonList)}}
+<ul>
+{% for pokemon in pokemonList %}
+    <li>
+      <h6>{{pokemon.name}}</h6>
+    </li>
+{% endfor %}
+</ul>
